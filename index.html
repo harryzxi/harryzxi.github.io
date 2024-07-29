@@ -1,17 +1,41 @@
 <!-- personal website -->
 <head>
     <link href="https://db.onlinewebfonts.com/c/97a55c954a18d2daae22c5f9114794d5?family=Lucida+Console" rel="stylesheet">
+   <style>
+        .custom-list {
+            list-style: none; /* Remove default list styling */
+            padding: 0;
+        }
+        .custom-list li {
+            position: relative;
+            padding-top: .8em; /* Adjust based on the width of the longest label */
+            padding-left: 13em; /* Adjust based on the width of the longest label */
+            margin-bottom: 16px; /* Optional: spacing between list items */
+        }
+        .custom-list li::before {
+            content: attr(data-label); /* Use the data-label attribute for custom numbering */
+            position: absolute;
+            left: 0;
+            width: 12em; /* Fixed width for the custom label */
+            text-align: right; /* Align text to the right */
+            font-weight: bold; /* Optional: make the label bold */
+        }
+    </style>
 </head>
 
 <div style="position: absolute; top: 30%; left: 50%; transform: translateX(-50%); width:808px">
 <p style="font-family: Lucida Console;"></p>
-<p style="font-family: Lucida Console; font-size: 45px;"><b>Harry Xi</b></p>
-<p style="font-family: Lucida Console;">I am a mathematics and statistics student at the University of Melbourne, specialising in <b>discrete mathematics</b> and <b>operations research</b>. 
-    <br><br> Currently, I was an at Canva as a <b>machine learning engineer</b>. 
-    <br><br> My academic interests are in <b>theoretical computer science</b> 
-    <br> → approximation algorithms, optimisation, graph theory & combinatorics</p>
+<p style="font-family: Lucida Console; font-size: 45px;"><b>✱ Harry Xi</b></p>
+<p style="font-family: Lucida Console;">I am an incoming graduate student [MSc in Advanced Computer Science] at the University of Oxford. </p>
+    <ol class="custom-list">
+        <li data-label="✱ [Winter 2024] " style="font-family: Lucida Console;"> I graduated! with a Bachelor of Science in mathematics and statistics: specialising in discrete mathematics and operations research from the University of Melbourne.</li>
+        <li data-label="✱ [Summer 2023] " style="font-family: Lucida Console;"> I was an intern at Canva as a machine learning engineer, experimenting with VQ-VAE for multimodal representation learning.</li>
+    </ol>
+    <p style="font-family: Lucida Console;">
+        <br> My academic interests can broadly be construed as <b>theoretical computer science</b> 
+        <br> → approximation algorithms, optimization, graph theory & combinatorics
+    </p>
 <br>
-
 
 <hr style="border-color: #000000;">
 <br>
@@ -26,4 +50,3 @@
 
 
 <div>
-
