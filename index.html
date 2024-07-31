@@ -21,11 +21,26 @@
             font-weight: bold; /* Optional: make the label bold */
         }
     </style>
+    <style>
+        .link-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 25px;
+        }
+
+        .link-container a {
+            text-decoration: none;
+            font-size: 16px;
+            color: blue;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <div style="position: absolute; top: 25%; left: 50%; transform: translateX(-50%); width:950px">
 <p style="font-family: Lucida Console;"></p>
 <p style="font-family: Lucida Console; font-size: 45px;"><b>✱ Harry Xi</b></p>
+
 <p style="font-family: Lucida Console;">I'm an incoming graduate student [MSc in Advanced Computer Science] at the University of Oxford. </p>
     <ol class="custom-list">
         <li data-label="✱ [Winter 2024] " style="font-family: Lucida Console;"> I graduated! with a Bachelor of Science in mathematics and statistics: specialising in discrete mathematics and operations research from the University of Melbourne.</li>
@@ -38,16 +53,15 @@
 <br>
 
 <hr style="border-color: #000000;">
-<br>
 <div>
 
-<div style="text-align: left;display: flex; flex-direction: row; gap: 50px;">
-
-<a href="/cv" style="font-family: Lucida Console; color: #000; text-decoration:none;"><b>CV</b></a>
-<a href="/projects" style="font-family: Lucida Console; color: #000; text-decoration:none;"><b>RESEARCH PROJECTS</b></a>
-<a href="/other" style="font-family: Lucida Console; color: #000; text-decoration:none;"><b>OTHER PROJECTS</b></a>
-<a href="/blog" style="font-family: Lucida Console; color: #000; text-decoration:none;"><b>TECHNICAL BLOG</b></a>
-<a style="font-family: Lucida Console; text-decoration:none;"> <b>Email</b>: harryxi567[at]gmail.com</a>
-
+<div class="link-container">
+    <a href="/cv" style="font-family: Lucida Console; color: #000; text-decoration:none;"><b>CV</b></a>
+    <a href="/projects" style="font-family: Lucida Console; color: #000; text-decoration:none;"><b>RESEARCH PROJECTS</b></a>
+    <a href="/other" style="font-family: Lucida Console; color: #000; text-decoration:none;"><b>OTHER PROJECTS</b></a>
+    <a href="/blog" style="font-family: Lucida Console; color: #000; text-decoration:none;"><b>TECHNICAL BLOG</b></a>
+</div>  
+<br>
+<a style="font-family: Lucida Console; color: #000;"> <b>Email</b>: harryxi567[at]gmail.com</a>
 
 <div>
